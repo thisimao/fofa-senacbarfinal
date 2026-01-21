@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentos Educacionais</title>
+
+<link rel="icon" href="fofa-logo.png">
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:"Segoe UI", Arial, sans-serif;
+  background:#f4f6f9;
+  color:#2c2c2c;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(90deg,#1f4fd8,#1639a5);
+  color:#fff;
+  padding:25px;
+  display:flex;
+  align-items:center;
+  gap:25px;
+  flex-wrap:wrap;
+}
+
+header img{height:150px}
+
+header h1{
+  margin:0;
+  font-size:28px;
+}
+
+header p{
+  margin:6px 0 0;
+  opacity:.9;
+}
+
+/* CONTEÚDO */
+section{
+  max-width:1150px;
+  margin:auto;
+  padding:30px 25px;
+}
+
+h2{
+  margin-top:0;
+  color:#1f4fd8;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+}
+
+/* CARD */
+.card{
+  background:#fff;
+  border-radius:16px;
+  padding:22px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  position:relative;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 28px rgba(0,0,0,0.12);
+}
+
+.card::before{
+  content:"";
+  height:6px;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  border-radius:16px 16px 0 0;
+  background:#1f4fd8;
+}
+
+.card h3{
+  margin-top:14px;
+  margin-bottom:10px;
+  font-size:18px;
+}
+
+.card p{
+  margin:6px 0 18px;
+  line-height:1.5;
+}
+
+/* BOTÃO */
+.card a{
+  display:inline-block;
+  background:linear-gradient(90deg,#1f4fd8,#1639a5);
+  color:#fff;
+  padding:12px 22px;
+  border-radius:30px;
+  font-size:14px;
+  font-weight:600;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.card a:hover{
+  opacity:.9;
+}
+
+/* FOOTER */
+footer{
+  background:#1f4fd8;
+  color:#fff;
+  text-align:center;
+  padding:18px;
+  margin-top:40px;
+  font-size:14px;
+}
+
+@media(max-width:600px){
+  header{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="fofa-logo.png">
+  <div>
+    <h1>Documentos Educacionais</h1>
+    <p>Repositório institucional de materiais pedagógicos</p>
+  </div>
+</header>
+
+<section>
+  <h2>Central de documentos</h2>
+  <p>
+    Acesse abaixo os <strong>documentos educacionais institucionais</strong>.
+    Os arquivos estão armazenados no próprio sistema e abrem em nova aba.
+  </p>
+</section>
+
+<section>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Regimento Escolar</h3>
+      <p>Normas institucionais que orientam direitos, deveres e funcionamento acadêmico.</p>
+      <a href="documentos/Regimento_Senac_2025_V6_ilustrado.pdf" target="_blank">
+        Acessar documento
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Proposta Pedagógica</h3>
+      <p>Documento orientador das concepções pedagógicas e práticas educacionais.</p>
+      <a href="documentos/Proposta Pedagogica Senac SP.pdf" target="_blank">
+        Acessar documento
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Orientações para Prática Pedagógica</h3>
+      <p>Diretrizes para planejamento, mediação e avaliação no processo educativo.</p>
+      <a href="documentos/Série Orientações para Prática Pedagógica - Planejar.pdf" target="_blank">
+        Acessar documento
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+ © 2026 – FOFA SENAC Barretos · Desenvolvido por Thiago Simão (TI)
+</footer>
+
+</body>
+</html>
